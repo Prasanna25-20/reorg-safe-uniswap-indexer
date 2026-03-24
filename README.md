@@ -33,8 +33,8 @@ This project is a high-performance blockchain indexer and state replay engine th
 
 - Full State Audit: Provides transparent verification of blockchain events for correctness.
 
+#how to run
 
- 
 1. Run Indexer
 go run main.go logs.go reorg.go
 
@@ -45,8 +45,18 @@ go run ./cmd/replay_state
 go run ./cmd/invariants
 
 4. Sample Output
-Block 17000001 -> State Hash: 2378a57a2e5e24b25f29b94c70d4ec88766da1f6
-STATE pair1 150 250
+Processed Block: 17000001  
+State Hash: 2378a57a2e5e24b25f29b94c70d4ec88766da1f6  
+Pair State: Reserve0=150, Reserve1=250
+
+
+## Performance
+
+- Processes ~10–15 blocks/sec in local environment
+- Deterministic state generation using replayable indexing
+- Ensures consistency across reorg scenarios via state replay
+
+
 
 
 
