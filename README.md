@@ -1,10 +1,10 @@
-# 🚀 Blockchain Indexer & State Replay Engine
+#  Blockchain Indexer & State Replay Engine
 
 A high-performance **blockchain indexing and deterministic state reconstruction engine** built in Go, designed to process raw blockchain logs, handle chain reorganizations (reorgs), and ensure consistent on-chain state through replay and validation.
 
 ---
 
-## 💡 Problem
+##  Problem
 
 Blockchain data is not strictly linear — **chain reorganizations (reorgs)** can invalidate previously processed blocks, leading to inconsistent or incorrect state in downstream systems.
 
@@ -12,7 +12,7 @@ This project solves this by implementing a **reorg-aware indexing system with de
 
 ---
 
-## ⚙️ What This System Does
+##  What This System Does
 
 - Processes raw blockchain logs and events  
 - Detects and handles chain reorganizations (reorgs)  
@@ -22,7 +22,7 @@ This project solves this by implementing a **reorg-aware indexing system with de
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 Raw Logs → Indexer → Reorg Handler → State Store
 ↓
@@ -34,7 +34,7 @@ Invariant Validator
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 - Reorg detection with rollback & reprocessing  
 - Deterministic state reconstruction  
 - Invariant validation (balances, liquidity, swaps)  
@@ -42,20 +42,20 @@ Invariant Validator
 
 ---
 
-## 📊 Performance
+##  Performance
 - ~10–15 blocks/sec (local)  
 - Consistent state across reorg scenarios  
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - Go (Golang)  
 - JSON-based blockchain logs  
 - CLI tools  
 
 ---
 
-## ▶️ Usage
+##  Usage
 ```bash
 # Run Indexer
 go run main.go logs.go reorg.go
